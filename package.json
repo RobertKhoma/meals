@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://RobertKhoma.github.io/meals-catalog/",
+  "homepage": "https://RobertKhoma.github.io/meals/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

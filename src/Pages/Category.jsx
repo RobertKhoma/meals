@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getProductsByCategoryName } from "../App";
 import Preloader from "../components/Preloader";
 import ProductList from "./ProductList";
+import Button from "../components/Button";
 
 
 
@@ -33,7 +34,7 @@ function Category() {
     if (error) return <div>{error} error</div>;
 
   
-    return (<>{!products.length && loading ? <Preloader/> :<ProductList products={products} />}</>)
+    return (<><Button/>{!products.length && loading ? <Preloader/> :<ProductList products={products} />}</>)
   }
   
   export default Category;

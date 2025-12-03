@@ -6,7 +6,7 @@ function InfoRecipe({ products }) {
  const navigate = useNavigate()
   return (
     <div>
-      <img src={products.strMealThumb} alt={products.strMealThumb} />
+      <img className="product-picture" src={products.strMealThumb} alt={products.strMealThumb} />
       <h1>{products.strMeal}</h1>
       <p>{products.strCategory}</p>
       <p>{products.strArea}</p>

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getProductById } from "../App";
 import Preloader from "../components/Preloader";
 import InfoRecipe from "../components/InfoRecipe";
+import Button from "../components/Button";
 
 function Recipe() {
   const { idMeal } = useParams();
@@ -27,7 +28,7 @@ function Recipe() {
     })();
   }, [idMeal]);
 
-  return (<>{loading ? <Preloader/> : <InfoRecipe products={products}/>
+  return (<><Button/>{loading ? <Preloader/> : <InfoRecipe products={products}/>
     }</>)
 }
 
